@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+JS+CSS</title>
+    <style>
+        thead{
+            color:#983810;
+            background-color:#FDCB6F ;
+            font-size:30px;
+            font-family:"Chilanka";
+        }
+        
+        table{
+            background-color:#FEEBCC ;
+            margin: auto;
+        }
+        tfoot{
+            text-align: center;
+        }
+        #dientich{
+            background-color:#FDCCCC;
+        }
+        #chuvi{
+            background-color:#FDCCCC;
+        }
+    </style>
+    <script>
+        function tinhdtcv(){
+            const pi=3.14;
+            var bk=document.getElementById("bankinh").value;
+            var dt=pi*Math.pow(bk,2);
+            var cv=pi*2*bk;
+            document.getElementById("dientich").value=dt;
+            document.getElementById("chuvi").value=cv;
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <form method="POST" action="4.3.html">
+            <table>
+                <col style="width: 100px;">
+                <col style="width: 70%;">
+                <thead>
+                    <tr>
+                        <th colspan="2">DIỆN TÍCH và CHU VI <br>HÌNH TRÒN</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Bán kính:</td>
+                        <td><input type="number" id="bankinh" placeholder="Nhập Bán Kính"></td>
+                    </tr>
+                    <tr>
+                        <td>Diện tích:</td>
+                        <td><input type="text" id="dientich" placeholder="Diện Tích" disabled="disable"></td>
+                    </tr>
+                    <tr>
+                        <td>Chu vi:</td>
+                        <td><input type="text" id="chuvi" placeholder="Chu Vi" disabled></td>
+                    </tr>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2"><input type="button" value="Tính" id="tinh" onclick="tinhdtcv()"></td>
+                        </tr>
+                    </tfoot>
+                </tbody>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
