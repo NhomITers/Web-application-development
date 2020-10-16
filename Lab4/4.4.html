@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lap4</title>
+</head>
+<body>
+    <div id="wrapper">
+        <div class ="container">
+            <form id="tinh_dien_tich_hinh_chu_nhat">
+                <table>
+                    <thread>
+                        <tr>
+                        <th colspan="2"><h1>Diện tích hình chữ nhật</h1></th>
+                        </tr>
+                    </thread>
+                <tbody>
+                    <tr>
+                        <td>Chiều rộng</td>
+                        <td>
+                            <input type="number" id ="chieu-rong" placeholder="Nhập chiều rộng">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Chiều dai</td>
+                        <td>
+                            <input type="number" id ="chieu-dai" placeholder="Nhập chiều dài">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Diện tích</td>
+                        <td>
+                            <input type="number" id ="dien-tich" placeholder="Diện tích hình chữ nhât" disabled="disabled">
+                        </td>
+                    </tr>
+                    <tr style="text-align: center;">
+                        <td colspan="2" >
+                            <input type="button" onclick="Tinhdientich()" value ="Tinh">
+                        </td>
+                    </tr>
+                </tbody>
+                </table>
+
+            </form>
+        </div>
+    </div>
+<script type="text/javascript">
+function Tinhdientich() {
+    var dai = document.getElementById("chieu-dai");
+    var rong = document.getElementById("chieu-rong");
+    var dientich=dai.value*rong.value;
+    document.getElementById("dien-tich").value=dientich;
+}
+</script>
+</body>
+</html>
