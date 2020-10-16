@@ -1,0 +1,20 @@
+div{
+    border: 10px red solid;
+    width: 600px;
+    height: 200px;
+}
+.div2{
+    border: 10px blue solid;
+    width: 200px;
+    height: 300px;
+}
+.div3{
+    border: 10px yellow solid;
+    width: 500px;
+    height: 100px;
+}
+body{
+    border: 10px olivedrab solid;
+    height: 500px;
+    width: 500px;
+}

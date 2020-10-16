@@ -1,0 +1,31 @@
+h1{
+    color: mediumvioletred;
+    text-align: center;
+    text
+}
+div.khung{
+    border: 1px solid black;
+}
+div.gallery{
+    margin: 5px;
+    border: 1px solid #0000ff;
+    padding: 5px;
+    height: 250px;
+    width: 250px;
+    display: inline-block;
+    text-align: center;
+
+
+}
+div.gallery a img {
+    width: 100px;
+    height: 100px;
+}
+div.gallery img:hover{
+    border: 10px solid #0000ff;
+}
+div.desc{
+    text-align: center;
+    font-weight: normal;
+    margin: 5px;
+}

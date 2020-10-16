@@ -3,87 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML5+CSS+JS</title>
-    <style type="text/css">
+    <title>HTML+CSS+JS</title>
+    <style>
         body{
-            background-color: antiquewhite;
+            background-color: #FFEDCC;
         }
         h1{
-            color:chocolate;
+            text-align: center;
+            color: #FF3399;
         }
-        .bentrai{
+        .left-side{
             float: left;
+            text-align: left;
+            margin-right: 30px;
+            width: 30%;
+        }
+        .right-side{
             
-            margin-top:1px;
-            
         }
-        table, tr,th ,td{
-            border: 2px solid palevioletred;
-            border-collapse: collapse;  
+        table{
+            border: solid 1pt black;
+            border-collapse: collapse;
+            width: 50%;
         }
-        table th{
-            background-color:#CC6600;
-            color: white;
+        td{
+            border: solid 1pt black;
         }
-        table tr:nth-child(even)
-        {
-            background-color: white;
+        
+        thead{
+            color: #FFFFFF;
+            background-color: #CC6600;
         }
-        table tr td:nth-child(2)
-        {
-            padding-right: 200px;
+        tbody tr{
+            background-color: #FFFFFF;
         }
-        table tr td:nth-child(1)
+        tbody tr:nth-child(even){
+            background-color: #FFEDCA;
+        }
+        tbody tr:hover{
+            background-color: #0011FF;
+        }
+        tbody td:nth-child(1)
         {
             text-align: center;
         }
-    </style>
+        </style>
 </head>
-<body>
-    
-    <div class="bentrai">
-        <img src="./img/pho.png" alt="Hình bát phở">
-    </div>
-    <div>
+    <body>
         <h1>Các món ngon Hà Nội</h1>
-    <table>
-        <tr>
-            <th>STT</th>
-            <th>Tên món ăn</th>
-        </tr>
-        <tr>
-            <td >1.</td>
-            <td>Bánh cuốn Thanh Trì</td>
-        </tr>
-        <tr>
-            <td>2.</td>
-            <td>Xôi Hà Nội</td>
-        </tr>
-        <tr>
-            <td>3.</td>
-            <td>Chả cá Lã Vọng</td>
-        </tr>
-        <tr>
-            <td>4.</td>
-            <td>Cháo Cóc</td>
-        </tr>
-        <tr>
-            <td> 5.</td>
-            <td>Bánh Gai Ninh Giang</td>
-        </tr>
-        <tr>
-            <td>6.</td>
-            <td>Búng Thang Hà Nội</td>
-        </tr>
-        <tr>
-            <td>7.</td>
-            <td>Canh Lằng</td>
-        </tr>
-        <tr>
-            <td>8.</td>
-            <td>Vịt quay Lạng Sơn</td>
-        </tr>
-    </table>
-</div>
-</body>
+        <div class="left-side">
+            <img src="img/hoa_tang_me_1.jpg">
+        </div>
+        <div class="right-side">
+            <table>
+            <col style="width: 5%">
+            <col style="width: 90%">
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Tên món ăn</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1. </td>
+                    <td>Bánh cuốn Thanh Trì</td>
+                </tr>
+                <tr>
+                    <td>2. </td>
+                    <td>Xôi Hà Nội</td>
+                </tr>
+                <tr>
+                    <td>3. </td>
+                    <td>Chả cá Lã Vọng</td>
+                </tr>
+                <tr>
+                    <td>4. </td>
+                    <td>Bánh gai Ninh Giang</td>
+                </tr>
+                <tr>
+                    <td>5. </td>
+                    <td>Bún thang Hà Nội</td>
+                </tr>
+                <tr>
+                    <td>6. </td>
+                    <td>Canh Lằng</td>
+                </tr>
+                <tr>
+                    <td>7. </td>
+                    <td>Vịt quay Lạng Sơn</td>
+                </tr>
+            </tbody>
+            </table>
+        </div>
+    </body>
 </html>
