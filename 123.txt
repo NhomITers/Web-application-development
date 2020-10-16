@@ -1,5 +1,5 @@
 git clone +link
-boot lên git
+boot lên git+ link
 cd+ tenthumuc
 
 git status 
