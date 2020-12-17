@@ -65,7 +65,7 @@ html {
   }
   h1 {
     font-size: 2em;
-    
+    color: orangered;
     margin: 0.67em 0;
   }
   mark {
@@ -185,12 +185,14 @@ html {
     font-weight: bold;
   }
   table {
+    border: 1px solid rgb(145, 3, 3);
     border-collapse: collapse;
     border-spacing: 0;
   }
   td,
   th {
     padding: 0;
+    
   }
   /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
   @media print {
@@ -254,10 +256,12 @@ html {
     }
     .table {
       border-collapse: collapse !important;
+      border: 1px;
     }
     .table td,
     .table th {
       background-color: #fff !important;
+      
     }
     .table-bordered th,
     .table-bordered td {
@@ -1115,6 +1119,7 @@ html {
   }
   img {
     vertical-align: middle;
+    margin: 1em 50em 0 35% ;
   }
   .img-responsive,
   .thumbnail > img,
@@ -1265,17 +1270,21 @@ html {
   }
   h1,
   .h1 {
-    font-size: 36px;
-    color: orange;
+    font-size: 30px;
+    font-weight: bold;
     text-align: center;
+    color: orange;
   }
   h2,
   .h2 {
     font-size: 30px;
+    color: blue;
   }
   h3,
   .h3 {
     font-size: 24px;
+    text-align: center;
+   
   }
   h4,
   .h4 {
@@ -1283,6 +1292,7 @@ html {
   }
   h5,
   .h5 {
+      font-weight: lighter;
     font-size: 14px;
   }
   h6,
@@ -2385,12 +2395,13 @@ html {
   .table > tfoot > tr > td {
     padding: 8px;
     line-height: 1.42857143;
-    vertical-align: top;
-    border-top: 1px solid #ddd;
+    vertical-align:center  ;
+    border: 1px solid rgb(223, 13, 13);
   }
   .table > thead > tr > th {
     vertical-align: bottom;
-    border-bottom: 2px solid #ddd;
+    background-color: rgb(252, 124, 5);
+    border: 2px solid rgb(145, 3, 3);
   }
   .table > caption + thead > tr:first-child > th,
   .table > colgroup + thead > tr:first-child > th,
@@ -2405,6 +2416,8 @@ html {
   }
   .table .table {
     background-color: #fff;
+    
+
   }
   .table-condensed > thead > tr > th,
   .table-condensed > tbody > tr > th,
@@ -2554,6 +2567,7 @@ html {
     }
     .table-responsive > .table {
       margin-bottom: 0;
+      
     }
     .table-responsive > .table > thead > tr > th,
     .table-responsive > .table > tbody > tr > th,
@@ -2563,6 +2577,7 @@ html {
     .table-responsive > .table > tfoot > tr > td {
       white-space: nowrap;
     }
+
     .table-responsive > .table-bordered {
       border: 0;
     }
@@ -3669,26 +3684,6 @@ html {
   }
   .open > a {
     outline: 0;
-  }
-  .img{
-
-    float: right;
-    line-height: 1;
-    margin: 0.01em 0.1em  0.1em 0.01em;
-  padding: 0.001em;
-  }
-  .dropcap
-  {
-    font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
-  background: #cfb087;
-  color: #d44912;
-  float: left;
-  font-size: 7rem;
-  font-weight: bolder;
-  line-height: 1;
-  margin: 0.001em 0.1em 0.2em 0;
-  padding: 0.01em;
-  border-style: double;
   }
   .dropdown-menu-right {
     right: 0;
@@ -6505,10 +6500,13 @@ html {
     margin: 1px;
     text-indent: -999px;
     cursor: pointer;
-    background-color: #000 \9;
+    background-color: #000 ;
     background-color: rgba(0, 0, 0, 0);
     border: 1px solid #fff;
     border-radius: 10px;
+  }
+  .thutdau{
+      margin-left: 30px;
   }
   .carousel-indicators .active {
     width: 12px;

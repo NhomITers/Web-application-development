@@ -1,0 +1,30 @@
+.h1{
+    color: mediumblue;
+    font-family: arial blue;
+}
+.container{
+    border: 1px solid black;
+    padding: 0;
+    width: 45%;
+    margin: 0 0 0 450px;
+    text-overflow: inherit;
+}
+.container h1{
+    color: mediumblue;
+    font-style: italic;
+    font-family: arial blue;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+.container td{
+    border: 1px solid black;
+    background-color: rgb(252, 250, 247);
+}
+.container th{
+    border: 1px solid black;
+    background-color: rgb(252, 250, 247);
+}
+.table_row{
+    margin: auto;
+}
